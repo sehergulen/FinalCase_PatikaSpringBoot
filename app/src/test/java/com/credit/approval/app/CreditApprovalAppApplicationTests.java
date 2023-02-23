@@ -39,14 +39,14 @@ class CreditApprovalAppApplicationTests {
 
 
 		Customer customer=new Customer();
-		customer.setName("kemal");
-		customer.setSurname("baysarı");
-		Date date=new Date(1995,3,9);
+		customer.setName("");
+		customer.setSurname("");
+		Date date=new Date();
 		customer.setBirthdate(date);
 		customer.setTc(1);
-		customer.setIncome(999999999999999999.9);
-		customer.setPhoneNumber("sizene");
-		customer.setCreditPoint(501);
+		customer.setIncome();
+		customer.setPhoneNumber("");
+		customer.setCreditPoint();
 
 		customerRepository.save(customer);
 

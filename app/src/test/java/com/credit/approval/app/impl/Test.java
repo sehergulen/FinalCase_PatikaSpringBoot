@@ -46,7 +46,7 @@ public class Test {/*
         }
 
         Customer customer=new Customer();
-        customer.setName("");
+        customer.setName("test-name");
         customer.setSurname("");
         Date date=new Date();
         customer.setBirthdate(String.valueOf(date));
