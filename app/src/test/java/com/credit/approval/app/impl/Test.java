@@ -46,14 +46,14 @@ public class Test {/*
         }
 
         Customer customer=new Customer();
-        customer.setName("kemal");
-        customer.setSurname("baysarı");
-        Date date=new Date(1995,3,9);
+        customer.setName("");
+        customer.setSurname("");
+        Date date=new Date();
         customer.setBirthdate(String.valueOf(date));
-        customer.setTc(33333);
-        customer.setIncome(9999.9);
-        customer.setPhoneNumber("sizene");
-        customer.setCreditPoint(501);
+        customer.setTc();
+        customer.setIncome();
+        customer.setPhoneNumber("");
+        customer.setCreditPoint();
         customerRepository.save(customer);
 
         if(customerOptional.isPresent()){
