@@ -1,0 +1,19 @@
+
+Docker için app properties:
+spring.datasource.url=jdbc:mariadb://maria_db:3306/app
+
+1) mvn install -DskipTests
+2) docker-compose build
+3) docker-compose up -d
+
+Swagger ui için tarayıcıdan:
+http://localhost:8080/swagger-ui/#
+
+
+todo:
+swagger api model
+unit test
+
+
+lokalde çalıştırmak için:
+spring.datasource.url=jdbc:mariadb://localhost:3306/app

@@ -1,0 +1,228 @@
+{
+	"info": {
+		"_postman_id": "bc96b1d9-f91a-40ea-bfd0-0f8e75bbd7e9",
+		"name": "CreditApp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Customer",
+			"item": [
+				{
+					"name": "add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"birthdate\": \"01-02-1950\",\r\n  \"income\": 12000,\r\n  \"name\": \"Kemal\",\r\n  \"phoneNumber\": \"555555\",\r\n  \"surname\": \"Baysari\",\r\n  \"tc\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/customer/add",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"customer",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update/income",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"income\": 50000,\r\n  \"tc\": 5\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/customer/update/income",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"customer",
+								"update",
+								"income"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update/creditpoint",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"creditPoint\": 1000,\r\n  \"tc\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/customer/update/creditpoint",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"customer",
+								"update",
+								"creditpoint"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/customer/delete/:tc",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"customer",
+								"delete",
+								":tc"
+							],
+							"variable": [
+								{
+									"key": "tc",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/customer/list",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"customer",
+								"list"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Credit",
+			"item": [
+				{
+					"name": "add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"deposit\": 2000000,\r\n  \"tc\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/credit/add",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"credit",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "list/tc/birthdate",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/credit/list/:tc/:birthdate",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"credit",
+								"list",
+								":tc",
+								":birthdate"
+							],
+							"variable": [
+								{
+									"key": "tc",
+									"value": "1"
+								},
+								{
+									"key": "birthdate",
+									"value": "09-03-1995"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "list",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/credit/list",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"credit",
+								"list"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
