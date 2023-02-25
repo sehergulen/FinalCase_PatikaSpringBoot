@@ -13,7 +13,7 @@
             }
         %>
         <br/>
-        <form method="get" action="http://localhost:8080/customerMvc/list" >
+        <form method="get" action="http://localhost:8080/creditMvc/list" >
             NAME:<input type="text" name="name"/><br/><br/>
             SURNAME:<input type="text" name="surname"/><br/><br/>
             TC:<input type="number" name="tc"/><br/><br/>
